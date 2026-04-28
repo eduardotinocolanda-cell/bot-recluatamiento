@@ -1,3 +1,38 @@
+# Dependencias
 node_modules/
-npm-debug.log
+jspm_packages/
+
+# Archivos de lock alternativos
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Archivos de entorno
 .env
+.env.test
+.env.production
+
+# Cobertura de pruebas
+coverage/
+*.lcov
+
+# Cachés
+.cache/
+.tmp/
+dist/
+build/
+
+# Configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
