@@ -1,0 +1,16 @@
+{
+  "name": "bot-reclutamiento",
+  "version": "1.0.0",
+  "description": "Bot de reclutamiento en WhatsApp usando wppconnect",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "Eduardo Tinoco",
+  "license": "ISC",
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "^1.41.3",
+    "xlsx": "^0.18.5"
+  }
+}
+

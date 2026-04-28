@@ -1,0 +1,152 @@
+{
+  "start": {
+    "message": "¡Hola! Soy el asistente de Reclutamiento Bokados.\n¿Gustas iniciar proceso de contratación?\n\nNuestras vacantes son:\n1) Obreros generales\n2) Almacén\n3) Montacarguista\n4) Operario de produccion. \n\nResponde con el número de la opción para la que gustes aplicar.",
+    "next": {
+      "1": "confirm_obreros",
+      "2": "filtro_fisico_almacen",
+      "3": "montacarguista",
+      "4": "confirm_produccion"
+    }
+  },
+
+  "filtro_fisico_almacen": {
+    "message": "La vacante de *Almacén* requiere realizar cargas pesadas, movimientos constantes y esfuerzo físico alto.\n¿Puedes realizar estas actividades?\n1) Sí\n2) No",
+    "next": {
+      "1": "confirm_almacen",
+      "2": "sin_vacantes_almacen"
+    }
+  },
+
+  "sin_vacantes_almacen": {
+    "message": "Gracias por tu honestidad. Por el momento no tenemos vacantes disponibles que se ajusten a tu perfil físico.\n\n¿Deseas aplicar para alguna otra vacante?\n1) Sí\n2) No",
+    "next": {
+      "1": "start",
+      "2": "fin_no"
+    }
+  },
+
+   "confirm_produccion": {
+    "message": "Has seleccionado la vacante de *Operador de produccion*.\n¿Confirmas que deseas aplicar a esta vacante?\n1) Sí\n2) No (volver a seleccionar vacante)",
+    "next": {
+      "1": "reingreso",
+      "2": "start"
+    }
+  },
+
+
+ "montacarguista": {
+    "message": "Has seleccionado la vacante de *montacarguista*.\n¿Confirmas que deseas aplicar a esta vacante?\n1) Sí\n2) No (volver a seleccionar vacante)",
+    "next": {
+      "1": "reingreso",
+      "2": "start"
+    }
+  },
+
+  "confirm_obreros": {
+    "message": "Has seleccionado la vacante de *Obreros Generales*.\n¿Confirmas que deseas aplicar a esta vacante?\n1) Sí\n2) No (volver a seleccionar vacante)",
+    "next": {
+      "1": "reingreso",
+      "2": "start"
+    }
+  },
+
+  "confirm_almacen": {
+    "message": "Has seleccionado la vacante de *Almacén*.\n¿Confirmas que deseas aplicar a esta vacante?\n1) Sí\n2) No (volver a seleccionar vacante)",
+    "next": {
+      "1": "reingreso",
+      "2": "start"
+    }
+  },
+
+    "reingreso": {
+    "message": "¿Anterirmente haz formado parte de la familia *ARCA CONTINENTAL*\n1) Si\n2) No",
+    "next": {
+      "1": "confirm_reingreso",
+      "2": "prestaciones_y_beneficios"
+
+    }
+  },
+
+  "confirm_reingreso": {
+    "message": "Una disculpa, por el momento no contamos con vacantes para reingreso. ¡Que tengas buena tarde!",
+    "next": "fin_no" 
+  },
+
+  "disponibilidad": {
+    "message": "¿Tienes algún problema con rotar entre los siguientes horarios?\n\nTurno día: 06:30 am a 03:00 pm\nTurno tarde: 03:00 pm a 11:00 pm\nTurno noche: 11:00 pm a 06:30 am\n\n1) No\n2) Si",
+    "next": {
+      "1": "documentos",
+      "2": "preferencia_de_horario"
+    }
+  },
+
+  "preferencia_de_horario": {
+    "message": "¿En caso de que contemos con vacantes de horario fijo cual de los siguientes se ajusta mas a tus necesidades?\n1) Turno día: 06:30 am a 03:00 pm\n2) Turno tarde: 03:00 pm a 11:00 pm\n3) Turno noche: 11:00 pm a 06:30 am\n",
+    "next": {
+      "1": "documentos",
+      "2": "documentos",
+      "3": "documentos"
+    }
+  },
+
+    "doping": {
+    "message": "¿Tienes algún problema con que se te realice examen medico o Doping de orina.\n\n1) No\n2) Si",
+    "next": {
+      "1": "documentos",
+      "2": "fin_no"
+    }
+  },
+
+  "prestaciones_y_beneficios": {
+    "message": "¡Únete a nuestro equipo y ahorra hasta 25 mil pesos al año!\n\nOfrecemos:\n• Apoyo en tu primer pago (comedor + $50 diarios)\n• Sueldo diario: $315.04\n• Premio de puntualidad y asistencia: $110\n• Premio de productividad: 4.15% del sueldo diario\n• Bono semanal de productividad: $300\n• 20% de descuento en producto\n• Transporte gratuito\n• Uniforme sin costo\n• Caja de ahorro: $30 semanales\n• Fondo de ahorro: 12%\n• Vales de despensa: $480 mensuales\n• Bono de asistencia: $265 mensuales\n• Seguro de vida\n• Aguinaldo: 23 días\n• Prima vacacional: 65%\n• Capacitación constante\n• Estabilidad laboral\n• Oportunidades de crecimiento\n\n¿Estás interesado en agendar entrevista?\n1) Sí\n2) No",
+    "next": {
+      "1": "disponibilidad",
+      "2": "fin_no"
+    }
+  },
+
+  "documentos": {
+    "message": "¿Cuentas con la siguiente documentación?\n- INE\n- CURP\n- Acta de nacimiento\n- RFC\n- Número de seguro social\n- Comprobante de estudios\n- Comprobante de domicilio\n\n*En caso de contar con los siguientes también es necesario presentarlos:*\n- Acta de matrimonio\n- Hoja de retención del Infonavit\n- Cartas de recomendación\n\n1) Sí\n2) No",
+    "next": {
+      "1": "nombre",
+      "2": "documentos_faltantes"
+    }
+  },
+
+  
+  "documentos_faltantes": {
+    "message": "¿Cual es tu documento faltante?\n1) INE\n2) CURP\n3) Acta de nacimiento\n4) RFC\n5) Número de seguro social\n6) Comprobante de estudios\n7) Comprobante de domicilio*",
+    "next": {
+      "1": "fin_no",
+      "2": "nombre",
+      "3": "fin_no",
+      "4": "fin_no",
+      "5": "nombre",
+      "6": "fin_no",
+      "7": "fin_no"
+    }
+  },
+
+  "nombre": {
+    "message": "Perfecto. ¿Me compartes tu nombre completo?",
+    "next": "edad"
+  },
+
+  "edad": {
+    "message": "¿Cuál es tu edad?",
+    "next": "ubicacion"
+  },
+
+  "ubicacion": {
+    "message": "¿En qué colonia vives actualmente?",
+    "next": "fin_ok"
+  },
+
+  "fin_ok": {
+    "message": "¡Gracias! Hemos recibido tu información. Un reclutador te contactará pronto."
+  },
+
+  "fin_no": {
+    "message": "¡Gracias por tu tiempo! Por el momento no podemos avanzar con tu proceso, Si deseas aplicar más tarde, aquí estaré 😊"
+  }
+}
